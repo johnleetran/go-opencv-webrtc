@@ -7,7 +7,7 @@ GoCV - OpenCV for go https://gocv.io/computer-vision/
 go mod download
 go mod vendor
 source setup.sh
-go build main
+go build main.go
 ./main
 
 Open http://localhost:8000

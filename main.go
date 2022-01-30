@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"go-yuv2webRTC/screenshot"
-	"go-yuv2webRTC/webrtc"
+	"go-opencv-webrtc/screenshot"
+	"go-opencv-webrtc/webrtc"
 	"image"
 	"io/ioutil"
 	"log"
@@ -32,7 +32,7 @@ var sigmaY float64 = 0.0
 func init() {
 
 	//initialize image stuff
-	imageFilePath = "/Users/john/go/src/go-yuv2webRTC/IMG_1566.png"
+	imageFilePath = "/Users/john/go/src/go-opencv-webrtc/IMG_1566.png"
 	cvImg = gocv.IMRead(imageFilePath, gocv.IMReadUnchanged)
 
 	screenWidth, screenHeight = screenshot.GetScreenSize(cvImg.Cols(), cvImg.Rows())
