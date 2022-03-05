@@ -32,7 +32,7 @@ var sigmaY float64 = 0.0
 func init() {
 
 	//initialize image stuff
-	imageFilePath = "/Users/john/go/src/go-opencv-webrtc/IMG_1566.png"
+	imageFilePath = "./IMG_1566.png"
 	cvImg = gocv.IMRead(imageFilePath, gocv.IMReadUnchanged)
 
 	screenWidth, screenHeight = screenshot.GetScreenSize(cvImg.Cols(), cvImg.Rows())

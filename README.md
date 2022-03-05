@@ -14,3 +14,9 @@ Open http://localhost:8000
 And press `Start Session`
 ```
 
+## Docker
+```
+docker build -t go-opencv-webrtc
+docker run -it --rm -p 8000:8000 go-opencv-webrtc bash -l
+```
+
