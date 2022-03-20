@@ -17,6 +17,6 @@ And press `Start Session`
 ## Docker
 ```
 docker build -t go-opencv-webrtc
-docker run -it --rm -p 8000:8000 go-opencv-webrtc bash -l
+docker run -it --rm -p 8000:8000 -p 52000-52100:52000-52100/udp go-opencv-webrtc
 ```
 
